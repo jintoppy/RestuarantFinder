@@ -13,9 +13,18 @@ window.App.Authentcation = (function($){
 		return true;
 	}
 
+	function getUserDetails(){
+
+		return {
+			username: "jintoppy",
+			name: "Jinto"
+		};
+	}
+
 	return{
 		login: login,
 		signup: signup,
+		getUserDetails: getUserDetails,
 		isAuthenticated: isAuthenticated 
 	};
 

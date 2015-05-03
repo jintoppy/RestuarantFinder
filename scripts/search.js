@@ -53,6 +53,15 @@ window.App.Search = (function($, _, H){
 		var data = {
 			items: restuarants.bangalore[0].indiranagar
 		};
+		var date = new Date(); 
+		var dateVal = date.toDateString() + " " + date.toTimeString();
+
+		App.Search_Log.addToLog({
+			city: 'Bangalore',
+			location: 'Whitefield',
+			date: dateVal,
+			results_count:10 
+		});
 		search_results.html(seach_result_template(data));
 	}
 
