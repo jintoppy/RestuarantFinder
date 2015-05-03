@@ -1,0 +1,26 @@
+{
+  "name": "Resturant Finder",
+  "version": "0.0.0",
+  "authors": [
+    "Jinto Jose <jintoppy@gmail.com>"
+  ],
+  "keywords": [
+    "restaurant",
+    "finder"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.8.0",
+    "jquery": "~2.1.4",
+    "select2": "~4.0.0",
+    "handlebars": "~3.0.3",
+    "fontawesome": "~4.3.0"
+  }
+}
