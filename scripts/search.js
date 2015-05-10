@@ -49,20 +49,30 @@ window.App.Search = (function($, _, H){
 
 	}
 
-	function search(){
-		var data = {
-			items: restuarants.bangalore[0].indiranagar
-		};
-		var date = new Date(); 
-		var dateVal = date.toDateString() + " " + date.toTimeString();
+	function search(event){
+		var date = new Date(),
+			dateVal = date.toDateString() + " " + date.toTimeString();
+			cityVal = city_search_box.val(),
+			localityVal = locality_search_box.val();
+		
 
+		var locationsInCity = restuarants[cityVal];
+		var restuarantsInLocation=[];
+		if(locationsInCity){
+			restuarantsInLocation = locationsInCity[localityVal];
+		}
+		var templateData = {
+			items: restuarantsInLocation,
+			isSuccess: restuarantsInLocation.length>0,
+			count: restuarantsInLocation.length
+		};
+		search_results.html(seach_result_template(templateData));
 		App.Search_Log.addToLog({
-			city: 'Bangalore',
-			location: 'Whitefield',
+			city: cityVal,
+			location: localityVal,
 			date: dateVal,
-			results_count:10 
+			results_count:restuarantsInLocation.length
 		});
-		search_results.html(seach_result_template(data));
 	}
 
 	function init(){

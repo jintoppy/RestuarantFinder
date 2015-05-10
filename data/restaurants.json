@@ -1,72 +1,68 @@
 {
-    "bangalore": [
-        {
-            "indiranagar": [
-                {
-                    "name": "hotel1",
-                    "address": "address details",
-                    "speciality": "non-veg and sea food",
-                    "menu": [
-                        {
-                            "dish": "dal makhani",
-                            "price": 120
-                        },
-                        {
-                            "dish": "butter chicken",
-                            "price": 220
-                        }
-                    ]
-                },
-                {
-                    "name": "hotel2",
-                    "address": "address details2",
-                    "speciality": "non-veg and arabic food",
-                    "menu": [
-                        {
-                            "dish": "dal makhani",
-                            "price": 120
-                        },
-                        {
-                            "dish": "paneer palak",
-                            "price": 220
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "domlur": [
-                {
-                    "name": "hotel3",
-                    "address": "address details",
-                    "speciality": "non-veg and sea food",
-                    "menu": [
-                        {
-                            "dish": "dal makhani",
-                            "price": 120
-                        },
-                        {
-                            "dish": "butter chicken",
-                            "price": 220
-                        }
-                    ]
-                },
-                {
-                    "name": "hotel4",
-                    "address": "address details2",
-                    "speciality": "non-veg and arabic food",
-                    "menu": [
-                        {
-                            "dish": "dal makhani",
-                            "price": 220
-                        },
-                        {
-                            "dish": "dal palak",
-                            "price": 320
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    "bangalore": {
+        "indiranagar": [
+            {
+                "name": "hotel1",
+                "address": "address details",
+                "speciality": "non-veg and sea food",
+                "menu": [
+                    {
+                        "dish": "dal makhani",
+                        "price": 120
+                    },
+                    {
+                        "dish": "butter chicken",
+                        "price": 220
+                    }
+                ]
+            },
+            {
+                "name": "hotel2",
+                "address": "address details2",
+                "speciality": "non-veg and arabic food",
+                "menu": [
+                    {
+                        "dish": "dal makhani",
+                        "price": 120
+                    },
+                    {
+                        "dish": "paneer palak",
+                        "price": 220
+                    }
+                ]
+            }
+        ],
+        "domlur": [
+            {
+                "name": "hotel3",
+                "address": "address details",
+                "speciality": "non-veg and sea food",
+                "menu": [
+                    {
+                        "dish": "dal makhani",
+                        "price": 120
+                    },
+                    {
+                        "dish": "butter chicken",
+                        "price": 220
+                    }
+                ]
+            },
+            {
+                "name": "hotel4",
+                "address": "address details2",
+                "speciality": "non-veg and arabic food",
+                "menu": [
+                    {
+                        "dish": "dal makhani",
+                        "price": 220
+                    },
+                    {
+                        "dish": "dal palak",
+                        "price": 320
+                    }
+                ]
+            }
+        ]
+    }
 }

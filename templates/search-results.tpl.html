@@ -1,10 +1,17 @@
-{{#each items}}
-  <div class="row">
-  	<div class="col-lg-12">
-  		<h2 class="restaurant-header"><a>{{name}}</a></h2>
-  		<div class="restaurant-details">This is restaurant details</div>
-  		<div class="menu-items">These are the menu items</div>
-  	</div>
-  </div>
-  <div class="divider"></div>
-{{/each}}
+{{#if isSuccess}}
+	{{#each items}}
+	  <div class="row">
+	  	<div class="col-lg-12">
+	  		<h2 class="restaurant-header"><a>{{name}}</a></h2>
+	  		<div class="restaurant-details">This is restaurant details</div>
+	  		<div class="menu-items">These are the menu items</div>
+	  	</div>
+	  </div>
+	  <div class="divider"></div>
+	{{/each}}
+	<p class="text-success">{{count}} results found.</p>
+{{else}}
+	<p class="text-danger">No results found.</p>
+{{/if}}
+
+
