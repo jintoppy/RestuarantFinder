@@ -7,7 +7,7 @@
 			App.init();
 		}
 		else{
-				
+			authentication.init();	
 		}
 			
 	}

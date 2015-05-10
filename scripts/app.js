@@ -3,7 +3,6 @@ window.App = (function($, H, _){
 		var TEMPLATES = {
 			Search: "",
 			Search_Log: "",
-			Login: "",
 			Signup: ""
 		};
 
